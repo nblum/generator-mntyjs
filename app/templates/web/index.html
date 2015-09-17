@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title><%= appname %></title>
+
+    <!--for production-->
+    <!--<script data-mntyjs="'loadFrom':'../srcweb/js/plugins'" src="js/main.js" type="text/javascript"></script>-->
+
+    <!--for development-->
+    <script data-mntyjs="'loggingEnabled':true, 'loadFrom':'../srcweb/js/plugins'" src="../bower_components/mntyjs/dist/mnty.dev.js" type="text/javascript"></script>
+
+
+    <% if (compass) { %>
+    <!--for production-->
+    <!--<link href="css/main.css" type="text/css" rel="stylesheet">-->
+
+    <link href="../srcweb/scss/main.css" type="text/css" rel="stylesheet">
+    <% } else { %>
+    <!--for development-->
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+
+    <% if (bootstrap) { %>
+    <!-- Bootstrap files -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <% } %>
+    <% } %>
+</head>
+
+<body>
+
+<% if (bootstrap) { %>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1><%= appname %></h1>
+
+            <a href="https://github.com/bitExpert/mntyjs" target="_blank">Learn more about mntyjs</a>
+        </div>
+    </div>
+</div>
+<% } else { %>
+<div class="container">
+    <h1><%= appname %></h1>
+    <a href="https://github.com/bitExpert/mntyjs" target="_blank">Learn more about mntyjs</a>
+</div>
+<% } %>
+<div class="preloader" data-mount="Preloader">
+    <div>loading...</div>
+</div>
+
+
+</body>
+</html>

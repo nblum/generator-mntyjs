@@ -1,0 +1,12 @@
+
+//vendors
+@import "compass/reset";
+<% if (bootstrap) { %>
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+<% } %>
+
+//settings
+@import "variables";
+
+//styles
+@import "partials/preloader";

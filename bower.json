@@ -1,0 +1,25 @@
+{
+  "name": "generator-mntyjs",
+  "version": "0.0.1",
+  "homepage": "https://github.com/nblum/generator-mntyjs",
+  "authors": [
+    "Nico Blum <n.blum@bitexpert.de>"
+  ],
+  "description": "Yeoman generator for an easy setup of mntyjs projects",
+  "keywords": [
+    "yeoman",
+    "generator",
+    "mntyjs",
+    "boostrap",
+    "compass",
+    "sass"
+  ],
+  "license": "proprietary",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

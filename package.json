@@ -1,0 +1,21 @@
+{
+  "name": "generator-mntyjs",
+  "version": "0.1.0",
+  "description": "creates a basic mntyjs app",
+  "author": {
+    "name": "Nico Blum",
+    "email": "",
+    "url": "https://github.com/nblum"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^0.20.3",
+    "chalk": "^1.0.0",
+    "yosay": "^1.0.2"
+  }
+}
