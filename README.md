@@ -11,6 +11,13 @@ Install `yo`, `grunt-cli`, `bower`:
     npm install -g grunt-cli bower yo
 ```
 
+Download or clone the repository and change to the directory.
+And link the npm package:
+```
+    sudo npm link
+```
+
+
 Make a new directory and change to it:
 ```
     mkdir my-new-project && cd $_
